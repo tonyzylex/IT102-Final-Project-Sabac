@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
+
 int main(){
     
     while (1)
@@ -15,15 +16,16 @@ int main(){
         printf("\n[1] = The Pattern Generator");
         printf("\n[2] = Pascals Triangle");
         printf("\n[3] = Grade Calculator & Evaluator");
-        printf("\n[4] = Palindrone Checker");
+        printf("\n[4] = Palindrome Checker");
         printf("\n[5] = Exit program");
         printf("\nChoose option(1-5):");
 
         if (scanf("%d",&userChoice) != 1)
         {
-            printf("\nInvalid input");
+            printf("Invalid input\n");
             while (getchar() != '\n');
         }else{
+            while (getchar() != '\n');
             if (userChoice == 1)
             {
                 int shapeInput = 0;
@@ -43,19 +45,24 @@ int main(){
 
                 if (scanf("%d",&shapeInput) != 1)
                 {
-                    printf("Invalid input");
+                    printf("Invalid input\n");
+                    while (getchar() != '\n');
                 }else{
+                    while (getchar() != '\n');
                     if (shapeInput == 1)
                     {
+                        system("cls");
                         printf("You have selected [Right Triangle]");
                         printf("\nInput size:");
                         if (scanf("%d",&size) != 1)
                         {
-                            printf("\nInvalid! input must be decimal value.");
+                            printf("Invalid! input must be decimal value.\n");
+                            while (getchar() != '\n');
                         }else{
+                            while (getchar() != '\n');   
                             if (size < 1)
                             {
-                                printf("\nSize must not be 0 or negative!");
+                                printf("Size must not be 0 or negative!\n");
                             }else{
                                 printf("\nOutput:\n");
                                 for (l1 = 0; l1 < size; l1++)
@@ -69,13 +76,16 @@ int main(){
                             }
                         }
                     }else if (shapeInput == 2){
+                        system("cls");
                         printf("You have selected [Square]");
                         printf("\nInput size:");
                         if (scanf("%d",&size) != 1){
-                            printf("\nInvalid! input must be decimal value.");
+                            printf("Invalid! input must be decimal value.\n");
+                            while (getchar() != '\n');
                         }else{
+                            while (getchar() != '\n');   
                             if (size < 1){
-                                printf("\nSize must not be 0 or negative!");
+                                printf("Size must not be 0 or negative!\n");
                             }else{
                                 printf("\nOutput:\n");
                                 for ( l1 = 0; l1 < size; l1++)
@@ -91,13 +101,16 @@ int main(){
                     }
                     else if (shapeInput == 3)
                     {
+                        system("cls");
                         printf("You have selected [Isosceles Triangle]");
                         printf("\nInput size:");
                         if (scanf("%d",&size) != 1){
-                            printf("\nInvalid! input must be decimal value.");
+                            printf("Invalid! input must be decimal value.\n");
+                            while (getchar() != '\n');   
                         }else{
+                            while (getchar() != '\n');   
                             if (size < 1){
-                                printf("\nSize must not be 0 or negative!");
+                                printf("Size must not be 0 or negative!\n");
                             }else{
                                 printf("\nOutput:\n");
                                 for (l1 = 0; l1 < size; l1++)
@@ -117,18 +130,21 @@ int main(){
                         }
                     }else if (shapeInput == 4)
                     {
+                        system("cls");
                         printf("You have selected [Inverted Right Triangle]");
                         printf("\nInput size:");
                         if (scanf("%d",&size) != 1){
-                            printf("\nInvalid! input must be decimal value.");
+                            printf("Invalid! input must be decimal value.\n");
+                            while (getchar() != '\n');   
                         }else{
+                            while (getchar() != '\n');   
                             if (size < 1){
-                                printf("\nSize must not be 0 or negative!");
+                                printf("Size must not be 0 or negative!\n");
                             }else{
                                 printf("\nOutput:\n");
                                 for (l1 = size; l1 >= 1; l1--)
                                 {   
-                                    for ( l3 = l1; l3 >= 1 ; l3--)
+                                    for ( l2 = l1; l2 >= 1 ; l2--)
                                     {
                                         printf("* ");
                                     }
@@ -138,13 +154,16 @@ int main(){
                         }
                         
                     }else if (shapeInput == 5){
+                        system("cls");
                         printf("You have selected [Christmas Tree]");
                         printf("\nInput size:");
                         if (scanf("%d",&size) != 1){
-                            printf("\nInvalid! input must be decimal value.");
+                            printf("Invalid! input must be decimal value.\n");
+                            while (getchar() != '\n');   
                         }else{
+                            while (getchar() != '\n');  
                             if (size < 1){
-                                printf("\nSize must not be 0 or negative!");
+                                printf("Size must not be 0 or negative!\n");
                             }else{
                                 printf("\nOutput:\n");
                                 for (l1 = 0; l1 < size; l1++)
@@ -165,7 +184,7 @@ int main(){
 
                                 tH = (int)size/2;
                                 
-                            for ( l3 = 0; l3 < tH; l3++)
+                                for ( l3 = 0; l3 < tH; l3++)
                                 {
                                     for ( l4 = 0; l4 < size - tH; l4++)
                                     {
@@ -181,21 +200,24 @@ int main(){
                             }
                         }
                         
-                    }else {printf("Invalid input!"); }
+                    }else {printf("Invalid input! Please input (1-5).\n"); }
                 }
                 
             }else if (userChoice == 2)
             {
+                system("cls");
                 int size = 0,l1 = 0,l2 = 0, l3 = 0;
                 printf("You have selected [Pascals Triangle]");
                 printf("\nInput size:");
                 
                 if(scanf("%d",&size) != 1){
-                    printf("\nInvalid input");
+                    printf("Invalid input\n");
+                    while (getchar() != '\n');
                 }else{
+                    while (getchar() != '\n');
                     if (size < 1)
                     {
-                        printf("Size cannot be 0 or negative");
+                        printf("Size cannot be 0 or negative\n");
                     }else{
                         printf("\nOutput:\n");
                         for (l1 = 0; l1 < size; l1++)
@@ -251,10 +273,12 @@ int main(){
                         while (getchar() != '\n'); 
                         continue;
                     }
+
+                    while (getchar() != '\n');
+
                     if (prelim < 1 || prelim > 5 || midterm < 1 || midterm > 5 || prefinal < 1 || prefinal > 5 || final < 1 || final > 5)
                     {
                         printf("Invalid input! Please enter grades between 1 and 5.\n");
-                        while (getchar() != '\n');
                         continue;
                     }
                     break; 
@@ -276,6 +300,7 @@ int main(){
                 printf("======== PALINDROME CHECKER ========\n");
                 printf("\n Enter a word: ");
                 scanf(" %99[^\n]", str);
+                while (getchar() != '\n');   
                 left = 0;
                 right = strlen(str) - 1;
                 while (left < right)
@@ -299,14 +324,14 @@ int main(){
                 } 
             }else if (userChoice == 5)
             {
-                printf("\nExiting program..!");
+                printf("\nThank you for using our program!");
                 break;
             }else {
-                printf("\nInvalid input! Try again!");
+                printf("Invalid input! Please input (1-5).\n");
             }
         }
-        printf("\nPress any Enter to continue..");
-        while (getchar() != '\n');
+        
+        printf("Press enter to continue..");
         getchar();
     }
     return 0;
