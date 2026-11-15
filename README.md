@@ -58,7 +58,7 @@ Every `scanf` is followed by a loop that clears whatever is left in the input bu
 ## Created by
 
 - Francis Anthony J. Sabac 
-- Harley Hersha Apurado
+- Harley Hersha T. Apurado
 
 ## Files
 
