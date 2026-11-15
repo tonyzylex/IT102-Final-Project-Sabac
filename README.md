@@ -55,6 +55,10 @@ Type a word or phrase and it tells you whether it reads the same backwards. It i
 
 Every `scanf` is followed by a loop that clears whatever is left in the input buffer, so typing letters where a number should go won't break the menu. After each tool finishes it waits for you to press Enter before going back to the main menu.
 
+## Created by
+
+Francis Anthony J. Sabac
+Harley Hersha Apurado
 
 ## Files
 
