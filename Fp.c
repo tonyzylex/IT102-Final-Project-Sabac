@@ -10,6 +10,7 @@ int main(){
     {
         system("cls");
         int userChoice = 0;
+        char cf = 0;
         printf("\n=====================================================\n");
         printf("                 Welcome to C-ToolKit!");
         printf("\n=====================================================");
@@ -331,8 +332,27 @@ int main(){
             }
         }
         
-        printf("Press enter to continue..");
-        getchar();
+        
+        
+        do
+        {
+            printf("Do you want to try another operation? (Y/N): ");
+            scanf(" %c", &cf);
+
+            while (getchar() != '\n');
+
+            if (cf != 'Y' && cf != 'y' && cf != 'N' && cf != 'n')
+            {
+                printf("Invalid input! Please enter Y or N.\n");
+            }
+
+        } while (cf != 'Y' && cf != 'y' && cf != 'N' && cf != 'n');
+
+        if (cf == 'n' || cf == 'N')
+        {
+            break;
+        }
     }
     return 0;
+    
 }
