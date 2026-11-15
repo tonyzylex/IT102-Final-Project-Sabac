@@ -59,3 +59,6 @@ Every `scanf` is followed by a loop that clears whatever is left in the input bu
 ## Files
 
 - `Fp.c` - the whole program
+- `Fp.exe` - the compiled sourced file
+- `Documentation` - A folder containing Algoritms, Flowchart, and Psuedocodes
+- `.vscode` - A folder containing the configuration set up, in running or debugging the source code
