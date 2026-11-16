@@ -148,7 +148,7 @@ int main(){
                                     for ( l2 = l1; l2 >= 1 ; l2--)
                                     {
                                         printf("* ");
-                                    }
+                                    }   
                                     printf(" \n");   
                                 }
                             }
@@ -183,7 +183,7 @@ int main(){
                                     printf(" \n");   
                                 }
 
-                                tH = (int)size/2;
+                                tH = (int)size/4;
                                 
                                 for ( l3 = 0; l3 < tH; l3++)
                                 {
