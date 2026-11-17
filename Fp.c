@@ -286,7 +286,7 @@ int main(){
                 }
                 average = (prelim + midterm + prefinal + final) / 4;
                 printf("Your average is: %.2f\n", average);
-                if (average <= 3.0)
+                if (average <= 3.01)
                 {
                     printf("You PASSED!\n");
                 } else if (average > 3.0)
