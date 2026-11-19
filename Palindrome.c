@@ -50,6 +50,14 @@ int main(){
                 left++;
                 right--;
             }
+            while (left < right)
+            {
+                char temp = str[left];
+                str[left] = str[right];
+                str[right] = temp;
+                left++;
+                right--;
+            }
             if (checker)
             {
                 printf("%s is not a palindrome.\n", str);
