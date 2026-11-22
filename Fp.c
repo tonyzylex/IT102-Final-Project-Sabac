@@ -173,14 +173,31 @@ int main(){
                                     {
                                         printf(" ");
                                     }
+
                                     
                                     for ( l3 = 0; l3 <= l1; l3++)
                                     {
                                         printf("* ");
                                     }
                                     
-                                    
                                     printf(" \n");   
+                                }
+
+                                for (l1 = 2; l1 < size; l1++)
+                                {
+                                    for (l2 = size - l1 ; l2 > 0; l2--)
+                                    {
+                                        printf(" ");
+                                    }
+
+                                    
+                                    for ( l3 = 0; l3 <= l1; l3++)
+                                    {
+                                        printf("* ");
+                                    }
+                                    printf(" \n"); 
+                                    
+                                
                                 }
 
                                 tH = (int)size/4;
